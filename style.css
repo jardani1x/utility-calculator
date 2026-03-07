@@ -38,6 +38,10 @@
     font-weight: bold;
     text-align: right;
     border-width: 2px !important;
+    width: 100%;
+    min-width: 120px;
+    padding: 8px;
+    font-size: 16px;
 }
 .card {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
