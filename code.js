@@ -54,10 +54,10 @@ $(document).ready(function () {
         $("#total_electric_usage").val(parseFloat(electricityUsage).toFixed(2));
         $("#total_water_usage").val(parseFloat(waterUsage).toFixed(2));
 
-        const electricityRate = 0.2709;
-        const waterRate1 = 1.43;
-        const waterRate2 = 1.09;
-        const waterMultiplier = 0.50; // 50%
+        const electricityRate = parseFloat($("#electric-reading").val());
+        const waterRate1 = parseFloat($("#water-reading").val());
+        const waterRate2 = parseFloat($("#water-borne-tax").val());
+        const waterMultiplier = parseFloat($("#water-conservation-tax").val()); // 50%
         const gstRate = 0.09; // 9%
 
         const electricityCost = electricityUsage * electricityRate;
